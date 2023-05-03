@@ -1,3 +1,48 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+:root{
+    --section-overlay: rgba(0,0,0,0.7);
+    --background-overlay: rgba(0,0,0,0.2);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.overlay{
+    background-color: var(--background-overlay);
+}
+
+.section{
+    width: 100%;
+    padding: 1rem;
+    border-radius: 0.4rem;
+    color: white;
+}
+
+.section__inputs , .section__temperature{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--section-overlay);
+}
+
+.section__inputs>input{
+    border: 0.8px solid white;
+    border-radius: 0.4rem;
+    background-color: transparent;
+    color: white;
+    padding: 0.5rem;
+    font-size: 20px;
+    font-weight: 200;
+}
+
+.section__inputs>input:focus{
+    outline: none;
+}
