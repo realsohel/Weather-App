@@ -5,3 +5,22 @@
 }
 
 
+.card{
+    background-color: var(--section-overlay);
+}
+
+@media screen and (max-width: 1024px ) {
+    .sectioon__descriptions{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media screen and (max-width: 550px ) {
+    .sectioon__descriptions{
+        grid-template-columns: 1fr ;
+    }
+}
+/* @media screen and (max-width: 1024px ) {
+    .sectioon__descriptions{
+        grid-template-columns: 1fr ;
+    }
+} */

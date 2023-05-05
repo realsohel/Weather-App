@@ -34,7 +34,7 @@
 }
 
 .section__inputs>input{
-    border: 0.8px solid white;
+    border: 0.5px solid gray;
     border-radius: 0.4rem;
     background-color: transparent;
     color: white;
@@ -45,4 +45,11 @@
 
 .section__inputs>input:focus{
     outline: none;
+}
+
+@media screen and(min-width: 450px ) {
+    .section__inputs , .section__temperature{
+        display: block;
+    }
+    
 }
