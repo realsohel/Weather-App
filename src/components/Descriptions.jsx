@@ -57,10 +57,10 @@ const Descriptions = (props) => {
     ]
     return (
         <>
-        <div className="section sectioon__descriptions grid  grid-cols-3 gap-10 mt-20 text-lg font-medium">
+        <div className="fade-in section sectioon__descriptions grid  grid-cols-3 gap-10 mt-20 text-lg font-medium">
         {cards.map(({id,icon,title,data,unit}) =>(
 
-            <div key={id}className="card flex flex-col items-center justify-between p-4 rounded-[0.4rem]">
+            <div key={id}className="card flex flex-col items-center justify-between p-4 rounded-[0.4rem] slide-up">
                 <div className="description__card-icon w-[100%] flex flex-row items-center justify-center gap-1 mt-2 mb-10 md:mb-4 ">
                     {icon}
                     <small className='capitalize'>{title}</small>

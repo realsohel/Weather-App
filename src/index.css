@@ -19,6 +19,10 @@
     background-color: var(--background-overlay);
 }
 
+.App img{
+    background-color: var(--background-overlay);
+}
+
 .section{
     width: 100%;
     padding: 1rem;
@@ -52,4 +56,56 @@
         display: block;
     }
     
+}
+
+
+
+.fade-in {
+    animation: fadeIn ease 1.5s;
+    }
+    @keyframes fadeIn{
+        0% {
+        opacity:0;
+        }
+        100% {
+        opacity:1;
+        }
+    }
+
+    .slide-right {
+            animation: 1.5s slide-right;
+        }
+        @keyframes slide-right {
+            from {
+            margin-left: -100%;
+            }
+            to {
+            margin-left: 0%;
+            }
+        }
+
+
+.slide-left {
+    animation: 1s slide-left;
+    }
+    @keyframes slide-left {
+        from {
+            margin-left: 100%;
+        }
+        to {
+            margin-left: 0%;
+        }
+}
+
+
+.slide-up {
+    animation: 1.5s slide-up;
+    }
+    @keyframes slide-up {
+        from {
+            margin-bottom: 100%;
+        }
+        to {
+            margin-bottom: 0%;
+        }
 }

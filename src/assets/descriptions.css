@@ -24,3 +24,29 @@
         grid-template-columns: 1fr ;
     }
 } */
+
+.fade-in {
+    animation: fadeIn ease 2s;
+    }
+    @keyframes fadeIn{
+        0% {
+        opacity:0;
+        }
+        100% {
+        opacity:1;
+        }
+    }
+
+
+
+.slide-up {
+    animation: 1.5s slide-up;
+    }
+    @keyframes slide-up {
+        from {
+            margin-bottom: 100%;
+        }
+        to {
+            margin-bottom: 0%;
+        }
+}
