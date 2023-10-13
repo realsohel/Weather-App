@@ -21,6 +21,7 @@
 
 .App img{
     background-color: var(--background-overlay);
+    /* width: 100%; */
 }
 
 .section{
@@ -55,6 +56,10 @@
     .section__inputs , .section__temperature{
         display: block;
     }
+    /* .App img{
+        background-color: var(--background-overlay);
+        width: 200%;
+    } */
     
 }
 

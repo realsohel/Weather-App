@@ -59,7 +59,7 @@ const Home = () => {
 
 
     return (
-        <div className="App w-[200%] md:w-[100%]  h-[auto] sm:h-[500%] md:h-[2000%] lg:h-[auto] bg-center bg-cover bg-repeat" style={{backgroundImage:`url(${bgimg})`}}>
+        <div className="App w-[200%] md:w-[100%]  h-[auto]  lg:h-[auto] bg-center bg-cover bg-repeat" style={{backgroundImage:`url(${bgimg})`}}>
         
         <div className="overlay ">
 
