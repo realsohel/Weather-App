@@ -19,7 +19,7 @@ const Home = () => {
         const fetchWeatherData= async()=>{
         const data = await getFormattedData(city,units);
         Setweather(data);
-        console.log(data)
+        // console.log(data)
 
         const tempBg = units === "metric"?20:68;
         if(data.temp >tempBg){
@@ -30,8 +30,6 @@ const Home = () => {
         }
         };
         fetchWeatherData();
-
-
 
     },[units , city]);
 
@@ -60,9 +58,8 @@ const Home = () => {
 
     return (
         <div className="App w-[200%] md:w-[100%]  h-[auto]  lg:h-[auto] bg-center bg-cover bg-repeat" style={{backgroundImage:`url(${bgimg})`}}>
-        
-        <div className="overlay ">
 
+        <div className="overlay ">
             {
             weather && <div className="container max-w-4xl m-auto h-[100%] flex flex-col items-center justify-between p-4">
 
@@ -70,19 +67,17 @@ const Home = () => {
                 <input onKeyDown={enterKeyPressed} className="text-black " type="text" name="city" placeholder="Enter the City..." />
                 <button className="text-black py-3 px-10 border-none rounded-[0.4rem] font-bold cursor-pointer bg-white hover:bg-gray-200 m-4 md:m-0" onClick={(e)=>{handleUnits(e)}}>°F</button>
             </div>
-
+            
             <div className="slide-right  section section__temperature">
                 <div className="icons flex flex-col items-center  justify-center">
                 <h2 className=" text-base font-medium capitalize">{`${weather.name}, ${weather.country}`} </h2>
                 <img src={`${weather.iconURL}`} alt="weather_icon" className="w-20"/>
                 <h2 className="capitalize">{`${weather.description}`}</h2>
                 </div>
-
                 <div className="temperature  text-[40px] sm:text-[60px] font-medium">
                 {`${weather.temp} °${units==="metric"?"C":"F"}`}
                 </div>
             </div>
-
             <Descriptions weather={weather} units={units}/>
             </div>
             }
